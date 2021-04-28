@@ -26,9 +26,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
       <div class="slides">
 
         <section>
-          <h1>Embedded Linux build systems</h1>
+          <h1>Let's build a Node.js container!</h1>
           <h2>Cezary Dynak</h2>
-          <h3>2018-04-07</h3>
+          <h3>2021-04</h3>
         </section>
         <!-- https://github.com/impress/impress.js/wiki/Examples-and-demos -->
         <!-- https://github.com/hakimel/reveal.js/wiki/Example-Presentations -->
@@ -49,7 +49,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             </ul>
           </section>
           <section>
-            <h2>CURRENTLY</h2>
+            <h2>RECENTLY</h2>
             <a href="http://www.spyro-soft.com"><img src="http://www.spyro-soft.com/wp-content/themes/spyro/img/logo.svg" /></a>
             <ul>
               <li>Node.js developer</li>
@@ -58,9 +58,14 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             </ul>
           </section>
           <section>
-            <a href="http://www.fsf.org/fb">
-              <img src="http://static.fsf.org/nosvn/no-facebook-me.png" alt="Not f'd — you won't find me on Facebook" />
-            </a>
+            <h2>CURRENTLY</h2>
+            <ul>
+              <li>Head of Node.js</li>
+              <li>Strategic Services</li>
+              <li><a href="mailto:cezary.dynak@stxnext.pl">cezary.dynak@stxnext.pl</a></li>
+            </ul>
+          </section>
+          <section>
               <br></br>
               <ul>
                 <li><a href="https://github.com/cdynak">github.com/cdynak</a></li>
@@ -71,10 +76,10 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         </section>
 
 
-        <section>
+        <!--section>
           <section>
             <h2>PLAN</h2>
-            <h4><a href="https://cdynak.github.io/linux2018">cdynak.github.io/linux2018</a></h4>
+            <h4><a href="https://dynak-com.github.io/linux2021">dynak-com.github.io/linux2021</a></h4>
             <ul>
               <li>Embedded Linux build systems - comparison</li>
               <ul>
@@ -90,7 +95,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
               </ul>
             </ul>
           </section>
-        </section>
+        </section-->
 
         <section>
           <section>
@@ -103,11 +108,6 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             <!-- https://commons.wikimedia.org/wiki/File:Operating_systems_used_on_top_500_supercomputers.svg -->
             <!-- https://en.wikipedia.org/wiki/File:Operating_systems_used_on_top_500_supercomputers.svg -->
             <!-- https://en.wikipedia.org/wiki/Usage_share_of_operating_systems -->
-          </section>
-          <section>
-            <h2>cloud</h2>
-            <img src="http://fossbytes.com/wp-content/uploads/2015/08/Ubuntu-linux-cloud-os-1.jpg" />
-            <!-- https://fossbytes.com/ubuntu-linux-is-the-most-popular-operating-system-in-cloud/ -->
           </section>
           <section>
             <h2>desktop</h2>
@@ -132,11 +132,6 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             <h2>embedded</h2>
             <img src="https://lcom.static.linuxfound.org/images/stories/41373/VDC-embedded-open-source-market.jpg" />
             <!-- https://www.linux.com/news/embedded-linux-keeps-growing-amid-iot-disruption-says-study -->
-          </section>
-          <section>
-            <h2>embedded</h2>
-            <img src="https://static4.arrow.com/-/media/images/research-and-events/articles/0916/0916-iot-operating-systems-final-image-2.jpg" />
-            <!-- https://www.arrow.com/en/research-and-events/articles/iot-operating-systems -->
           </section>
         </section>
 
@@ -209,7 +204,7 @@ pv sdcard.img | dd of=/dev/sdb bs=4M oflag=dsync
             <img src="https://openwrt.org/lib/tpl/openwrt/images/logo.png" />
             <img height="150" src="http://ltib.org/graphics/ltib_build.png" />
             <img height="150" src="https://www.ptxdist.org/images/PTXdist_Logo_RGB.svg" />
-            <img src="http://www.yoctoproject.org/docs/current/yocto-project-qs/figures/yocto-project-transp.png" />
+            <img src="https://www.yoctoproject.org/wp-content/uploads/2020/05/YoctoProject_Logo_RGB_White_small.svg" />
           </section>
 
           <section>
@@ -251,7 +246,7 @@ pip install python-openstackclient
 
 openstack server create --flavor 'c2-30' --image 'Debian 9' --network 'Ext-Net' --key-name 'my_key-name' '15sl1'
 
-ssh debian@54.37.130.68
+ssh debian@51.68.145.251
             </code></pre>
           </section>
 
@@ -356,7 +351,7 @@ cp platform-rpi/images/hd.img ~
           </section>
 
           <section>
-            <img src="http://www.yoctoproject.org/docs/current/yocto-project-qs/figures/yocto-project-transp.png" />
+            <img src="https://www.yoctoproject.org/wp-content/uploads/2020/05/YoctoProject_Logo_RGB_White_small.svg" />
           </section>
           <section>
             <pre><code class="hljs" data-trim contenteditable>
@@ -409,7 +404,7 @@ cp tmp/deploy/images/$MACHINE/*img ~
           </section>
         </section>
 
-        <section>
+        <!--section>
           <section>
             <h2>Node.js SCADA</h2>
           </section>
@@ -422,7 +417,7 @@ cp tmp/deploy/images/$MACHINE/*img ~
               <li><a href="oscada.org/websvn/listing.php?repname=OpenSCADA">oscada.org/websvn/listing.php?repname=OpenSCADA</a> (C++, GPLv2)</li>
             </ul>
           </section>
-        </section>
+        </section-->
 
         <section>
           <section>
@@ -436,14 +431,13 @@ cp tmp/deploy/images/$MACHINE/*img ~
             instances. Such instances, called containers</p>
           </section-->
           <section>
-            <h4>Currently there is only one king</h4>
+            <h4>Currently there is one king</h4>
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" />
             <!-- https://en.wikipedia.org/wiki/File:Docker_(container_engine)_logo.svg -->
           </section>
-          <section>
+          <!--section>
             <img src="https://www.docker.com/sites/default/files/containers-vms-together.png" />
-            <!-- https://www.docker.com/what-container -->
-          </section>
+          </section-->
           <section>
             <h3>How to make it work?</h3>
             <ul>
@@ -496,72 +490,12 @@ docker run -t -i basic-system /bin/sh
 
         <section>
           <section>
-            <h1>CONCLUSIONS</h1>
-          </section>
-          <section>
-            <h3>Build systems are better than distributions</h3>
-            <ul>
-              <li>For professional usage</li>
-              <li>Latest versions of kernel and packages</li>
-              <li>Easy update and portability</li>
-              <li>Examples: PandaBoard, Raspbian MPK</li>
-            </ul>
-          </section>
-
-          <section>
-            <img src="https://gallery.dpcdn.pl/imgd/News/81008/g_-_-x-_-_-_xc66f0287-6f49-4948-9b92-039672875592.png" \>
-            <!-- https://www.dobreprogramy.pl/Kasowniki-nowego-systemu-biletowego-we-Wroclawiu-zawiesisz-przez-Google-Pay,News,86699.html -->
-          </section>
-          
-          <section>
-            <h3>Comparability</h3>
-            <ul>
-              <li>Experience from one build system is useful on the others</li>
-              <li>Software is easily portable between build systems</li>
-              <li>Companies should try to experiment</li>
-            </ul>
-          </section>
-
-          <section>
-            <img height="600" src="http://turnoff.us/image/en/devops-explained.png" \>
-          </section>
-
-          <section>
-            <h3>Edge computing</h3>
-            <ul>
-              <li>Perfect tools for edge computing</li>
-              <li>Portable between cloud and embedded</li>
-              <li>It is affordable to run Node.js on embedded device</li>
-              <li>Escaping from vendor/cloud lock-in...</li>
-            </ul>
-          </section>
-
-          <section>
-            <img height="600" src="http://turnoff.us/image/en/net-neutrality-and-iot.png" \>
-          </section>
-          <section>
-            <img height="600" src="http://turnoff.us/image/en/net-neutrality-and-iot-2.png" \>
-          </section>
-
-          <section>
-            <h3>Open questions</h3>
-            <ul>
-              <li>Why only Linux?</li>
-              <li>What about MINIX, BSD, Darvin and HURD?</li>
-              <li>Embedded Unix build systems?</li>
-              <li>(yes, I know that Linux Standard Base and other "great standarizations" failed...)</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <section>
             <h2>Thank you for attention</h2>
           </section>
           <section>
             <h2>bibliography is inside source code</h2>
-            <p><a href="cdynak.github.io/linux2018">cdynak.github.io/linux2018</a></p>
-            <p><a href="github.com/cdynak/linux2018">github.com/cdynak/linux2018</a></p>
+            <p><a href="dynak-com.github.io/linux2021">cdynak.github.io/linux2018</a></p>
+            <p><a href="github.com/dynak-com/linux2021">github.com/cdynak/linux2018</a></p>
             <p><a href="github.com/cdynak/embedded-linux-build-systems">github.com/cdynak/embedded-linux-build-systems</a></p>
           </section>
           <section>
